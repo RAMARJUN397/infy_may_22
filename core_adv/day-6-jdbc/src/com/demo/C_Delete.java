@@ -13,7 +13,7 @@ public class C_Delete {
 		try {
 			PreparedStatement pstmt=connection.
 					prepareStatement("delete from emp where id=?");//placeholder
-			pstmt.setInt(1, 4);
+			pstmt.setInt(1, 3);
 			
 			
 		 int noOfRows=	pstmt.executeUpdate();

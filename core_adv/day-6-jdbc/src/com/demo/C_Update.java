@@ -16,7 +16,7 @@ public class C_Update {
 		try {
 			PreparedStatement pstmt=connection.
 					prepareStatement("update emp set salary=? where id=?");//placeholder
-			pstmt.setDouble(1, 9000000);
+			pstmt.setDouble(1, 9900000);
 			pstmt.setInt(2, 1);
 			
 		 int noOfRows=	pstmt.executeUpdate();

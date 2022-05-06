@@ -50,7 +50,7 @@ public class ConnectionFactory {
 	}
 
 	// using properties
-//	public static Connection getConnection() {
+//	public static Connection getConnectionV2() {
 //		/*
 //		 * I need to load the property file and pick the key corrosponding values
 //		 * for doing the same operation to read the prop we have a framework
@@ -89,7 +89,7 @@ public class ConnectionFactory {
 //		return connection;
 //	}
 
-//	public static Connection getConnection() {
+//	public static Connection getConnectionV1() {
 //		try {
 //			Class.forName("com.mysql.jdbc.Driver");// this is dynamic class loading
 //			System.out.println("driver is loaded");

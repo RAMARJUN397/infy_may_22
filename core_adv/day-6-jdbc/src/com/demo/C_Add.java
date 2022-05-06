@@ -9,7 +9,8 @@ public class C_Add {
 		
 		Connection connection=ConnectionFactory.getConnection();
 		//Statement (prefromace issue, SQL injection problem) vs PrepareStatement(faster and no sql injection problem)
-		
+																	
+																				//placeholder
 		try {
 			PreparedStatement pstmt=connection.
 					prepareStatement("insert into emp(name,salary, dept) values (?,?,?)");//placeholder

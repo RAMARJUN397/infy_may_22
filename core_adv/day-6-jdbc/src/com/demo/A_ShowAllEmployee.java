@@ -21,7 +21,9 @@ public class A_ShowAllEmployee {
 			connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/infy2?useSSL=false",
 					"root", "root");
 			stmt = connection.createStatement();
-			rs = stmt.executeQuery("select * from emp");// executeQuery(select) vs executeUpdate(CUD)
+			rs = stmt.executeQuery("select * from emp");
+			
+			// executeQuery(select) vs executeUpdate(CUD)
 
 			// till all records not finished, print one by one
 			while (rs.next()) {
